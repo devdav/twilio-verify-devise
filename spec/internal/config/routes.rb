@@ -2,13 +2,11 @@
 
 Rails.application.routes.draw do
   devise_for :users
-  devise_for :lockable_users, # for testing authy_lockable
+  devise_for :lockable_users, # for testing twilio_verify_lockable
     class: 'LockableUser',
     :path_names => {
-      :verify_authy => "/verify-token",
-      :enable_authy => "/enable-two-factor",
-      :verify_authy_installation => "/verify-installation",
-      :authy_onetouch_status => "/onetouch-status"
+      :verify_twilio_verify => "/verify-token",
+      :enable_twilio_verify => "/enable-two-factor"
     }
   root 'home#index'
 end

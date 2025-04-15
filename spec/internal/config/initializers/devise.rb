@@ -4,12 +4,9 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
 
-  # ==> Devise Authy Authentication Extension
+  # ==> Devise Twilio Verify Authentication Extension
   # How long should the user's device be remembered for.
-  # config.authy_remember_device = 1.month
-
-  # Should Authy OneTouch be enabled?
-  # config.authy_enable_onetouch = false
+  # config.twilio_verify_remember_device = 1.month
 
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing

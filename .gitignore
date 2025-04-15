@@ -1,3 +1,6 @@
+.DS_Store
+.orig
+
 *.gem
 *.rbc
 /.config
@@ -39,7 +42,6 @@ gemfiles/*.lock
 **/*.sqlite
 **/*.log
 
-initializers/authy.rb
 .byebug_history
 
 .rspec_status
