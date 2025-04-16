@@ -4,7 +4,7 @@ class Devise::DeviseTwilioVerifyController < DeviseController
   ]
 
   prepend_before_action :authenticate_scope!, :only => [
-    :GET_enable_twilio_verify, :POST_enable_twilio_verify, :POST_disable_twilio_verify
+    :POST_enable_twilio_verify, :POST_disable_twilio_verify
   ]
 
   include Devise::Controllers::Helpers
@@ -15,11 +15,6 @@ class Devise::DeviseTwilioVerifyController < DeviseController
 
   # verify 2fa
   def POST_verify_twilio_verify
-    raise NotImplementedError
-  end
-
-  # enable 2fa
-  def GET_enable_twilio_verify
     raise NotImplementedError
   end
 

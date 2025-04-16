@@ -10,10 +10,6 @@ RSpec.describe "routes with devise_twilio_verify", type: :controller do
       expect(post: '/users/verify_twilio_verify').to route_to("devise/devise_twilio_verify#POST_verify_twilio_verify")
     end
 
-    it "routes to devise_twilio_verify#GET_enable_twilio_verify" do
-      expect(get: '/users/enable_twilio_verify').to route_to("devise/devise_twilio_verify#GET_enable_twilio_verify")
-    end
-
     it "routes to devise_twilio_verify#POST_enable_twilio_verify" do
       expect(post: '/users/enable_twilio_verify').to route_to("devise/devise_twilio_verify#POST_enable_twilio_verify")
     end
@@ -28,7 +24,6 @@ RSpec.describe "routes with devise_twilio_verify", type: :controller do
     it "updates to new routes set in the mapping" do
       expect(get: '/lockable_users/verify-token').to route_to("devise/devise_twilio_verify#GET_verify_twilio_verify")
       expect(post: '/lockable_users/verify-token').to route_to("devise/devise_twilio_verify#POST_verify_twilio_verify")
-      expect(get: '/lockable_users/enable-two-factor').to route_to("devise/devise_twilio_verify#GET_enable_twilio_verify")
       expect(post: '/lockable_users/enable-two-factor').to route_to("devise/devise_twilio_verify#POST_enable_twilio_verify")
     end
 
