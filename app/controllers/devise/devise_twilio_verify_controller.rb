@@ -69,16 +69,6 @@ class Devise::DeviseTwilioVerifyController < DeviseController
     root_path
   end
 
-  # TODO: move this to app
-  def handle_invalid_code(view, error_message)
-    if @resource.respond_to?(:invalid_twilio_verify_attempt!) && @resource.invalid_twilio_verify_attempt!
-      after_account_is_locked
-    else
-      set_flash_message(:error, error_message)
-      render view
-    end
-  end
-
   def after_account_is_locked
     sign_out_and_redirect @resource
   end
