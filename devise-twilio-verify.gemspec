@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["David Edwards"]
   spec.email         = ["david@clubworx.com"]
 
+  spec.summary       = %q{A fork of authy-devise that uses the Twilio Verify API.}
   spec.description   = %q{A fork of authy-devise that uses the Twilio Verify API.}
   spec.homepage      = "https://github.com/devdav/twilio-verify-devise"
   spec.license       = "MIT"
